@@ -1,0 +1,19 @@
+<div class="transactions-container">
+  <h3>Last few transactions</h3>
+  <div class="transactions-list">
+    <div class="transaction-item" *ngFor="let trans of transactions">
+      <img 
+        [src]="trans.image" 
+        [alt]="trans.name" 
+        class="trans-image"
+        (error)="onImageError($event)">
+      <div class="trans-info">
+        <div class="trans-name">{{ trans.name }}</div>
+        <div class="trans-shop">{{ trans.shop }}</div>
+        <div class="trans-location">{{ trans.location }}</div>
+      </div>
+      <div class="trans-price">{{ trans.price }}</div>
+      <div class="trans-status" [ngClass]="trans.statusClass">{{ trans.status }}</div>
+    </div>
+  </div>
+</div>

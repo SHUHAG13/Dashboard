@@ -1,0 +1,17 @@
+<div class="products-container">
+  <h3>Top 3 Products</h3>
+  <div class="products-list">
+    <div class="product-item" *ngFor="let product of topProducts">
+      <div class="product-name">{{ product.name }}</div>
+      <div class="product-bar-wrapper">
+        <div class="product-bar" 
+             [ngStyle]="{
+               'width': getPercentage(product.value) + '%', 
+               'background-color': product.color
+             }">
+        </div>
+        <span class="product-value">{{ product.value }}</span>
+      </div>
+    </div>
+  </div>
+</div>

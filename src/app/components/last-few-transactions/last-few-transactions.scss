@@ -1,0 +1,92 @@
+.transactions-container {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+h3 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.transaction-item {
+  display: grid;
+  grid-template-columns: 60px 1fr 100px 120px;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.transaction-item:hover {
+  background-color: #f8f9fa;
+}
+
+.trans-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+}
+
+.trans-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.trans-shop,
+.trans-location {
+  font-size: 12px;
+  color: #999;
+  margin-top: 2px;
+}
+
+.trans-price {
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.trans-status {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-shipped {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-confirmed {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-delivered {
+  background-color: #d4edda;
+  color: #155724;
+}

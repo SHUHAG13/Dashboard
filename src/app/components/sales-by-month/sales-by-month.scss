@@ -1,0 +1,20 @@
+.chart-container {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+h3 {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.chart-wrapper {
+  position: relative;
+  height: 350px;
+}

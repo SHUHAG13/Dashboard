@@ -1,0 +1,11 @@
+<div class="top-widgets">
+  <div class="widget-card" *ngFor="let widget of widgets" [ngStyle]="{'background-color': widget.bgColor}">
+    <div class="widget-icon">
+      <fa-icon [icon]="widget.icon"></fa-icon>
+    </div>
+    <div class="widget-info">
+      <div class="widget-value">{{ widget.value }}</div>
+      <div class="widget-title">{{ widget.title }}</div>
+    </div>
+  </div>
+</div>
