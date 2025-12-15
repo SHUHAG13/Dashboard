@@ -15,7 +15,7 @@ export class TopWidgets {
       icon: faLocationDot, 
       title: 'Locations', 
       value: 32, 
-      bgColor: '#0d4a4a' 
+      bgColor: '#4548e4ff' 
     },
     { 
       icon: faStore, 
@@ -27,13 +27,13 @@ export class TopWidgets {
       icon: faBox, 
       title: 'Products Sold', 
       value: 45784, 
-      bgColor: '#8b0000' 
+      bgColor: '#7134a3ff' 
     },
     { 
       icon: faDollarSign, 
       title: 'Total Revenue', 
       value: 346928, 
-      bgColor: '#7c3aed' 
+      bgColor: '#0a682eff' 
     }
   ];
 
